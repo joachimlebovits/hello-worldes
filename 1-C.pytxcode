@@ -1,0 +1,50 @@
+=>PYTHONTEX#py#default#default#0#code#####26#
+from sympy import *
+x, y = symbols('x y')
+=>PYTHONTEX#py#default#default#1#code#####35#
+exp = x*(x + 2*y)
+dev_exp = expand(exp)
+print('diff is diff')
+=>PYTHONTEX#py#default#default#2#i#####42#
+latex(diff(cos(x), x))
+=>PYTHONTEX#py#default#default#3#i#####44#
+latex(dev_exp)
+=>PYTHONTEX#sympy#default#default#0#code#####48#
+A = Matrix([[1, 2], [3, 7]])
+=>PYTHONTEX#sympy#default#default#1#i#####55#
+A
+=>PYTHONTEX#sympy#default#default#2#i#####62#
+A**2
+=>PYTHONTEX#sympy#default#default#3#i#####70#
+A
+=>PYTHONTEX#sympy#default#default#4#i#####77#
+A**2
+=>PYTHONTEX#sympy#default#default#5#i#####85#
+A**5
+=>PYTHONTEX#sympy#default#default#5#i#####85#
+A**5
+=>PYTHONTEX:SETTINGS#
+version=0.18
+outputdir=pythontex-files-1-C
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|
