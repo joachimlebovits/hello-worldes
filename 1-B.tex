@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pgf,interval}
+
+
+\usepackage{pythontex}
+
+
+
+%%Ensemble des programmes python
+%\input{/Users/jlebovits/Dropbox/5-Latex_et_tous_logiciels_de_math_et_terminal/1-Latex/2-Fichiers_Tex_a_inclure/Inputgene/Prog_Python.tex}
+
+
+
+
+
+
+\begin{document}
+
+
+\begin{pycode}
+from sympy import *
+x, y = symbols('x y')
+\end{pycode}
+
+
+
+\section{Développements, factorisations...}
+Une expression : $x(x + 2y)$
+\begin{pycode}
+exp = x*(x + 2*y)
+dev_exp = expand(exp)
+print('diff is diff')
+\end{pycode}
+
+
+La dérivée de la fonction définie par $\cos(x)$ est : $\py{latex(diff(cos(x), x))}$
+
+Le développement de $x(x + 2y)$ est $\py{latex(dev_exp)}$
+
+
+
+\begin{sympycode}
+A = Matrix([[1, 2], [3, 7]])
+\end{sympycode}
+%
+\begin{equation}
+ A 
+ =
+\sympy{A}
+\end{equation}
+%
+%
+\begin{equation*}
+ A^2 
+ =
+\sympy{A**2}
+\end{equation*}
+
+eofieofijoij
+
+
+
+
+\end{document}
